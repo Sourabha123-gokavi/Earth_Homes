@@ -1,0 +1,68 @@
+<style>
+  .search-btn {
+    background-color:#683193;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem;
+  }
+  .search-btn:hover {
+    background-color: #ac47fa;
+    color: #fff;
+  }
+  .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+  }
+</style>
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listings" style="font-family: 'Times New Roman', serif; font-size: 24px; text-decoration: none; color: #333;">
+        <b><i class="fa-solid fa-earth-europe" style="font-size: 32px; vertical-align: middle;"></i></b>
+        EarthHomes
+      </a>
+      
+        <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavAltMarkup" 
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- <div class="navbar-nav">
+          <a class="nav-link" href="/listings">Explore</a>
+        </div> -->
+        <div class="navbar-nav ms-auto">
+          <form class="d-flex" action="/listings/search" method="GET" style="background-color: rgb(219, 251, 210); padding: 10px; border-radius: 5px;">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search destinations" name="title" style="width: 500px;" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        
+        
+        
+
+        
+
+
+        <div class="navbar-nav ms-auto" style="background-color: rgb(219, 251, 210); padding: 10px; border-radius: 5px;">
+          <a class="nav-link classic-link" href="/listings/new" style="font-family: 'Times New Roman', serif; font-size: 20px; text-decoration: none; color: #333;">Add New Place</a>
+          <% if(!currUser) { %>
+            <a class="nav-link classic-link" href="/signup" style="font-family: 'Times New Roman', serif; font-size: 20px; text-decoration: none; color: #333;">Sign Up</a>
+            <a class="nav-link classic-link" href="/login" style="font-family: 'Times New Roman', serif; font-size: 20px; text-decoration: none; color: #333;">Login</a>
+          <% } %>
+          <% if(currUser) { %>
+            <a class="nav-link classic-link" href="/logout" style="font-family: 'Times New Roman', serif; font-size: 20px; text-decoration: none; color: #333;">Log out</a>
+          <% } %>
+        </div>
+        
+        
+        
+
+      </div>
+    </div>
+</nav>
