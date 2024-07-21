@@ -1,3 +1,5 @@
+Just simple reminder please visit the website as i have updated all the new places which you will love to see those places
+
 This is now rendered and live on "https://earthhomes.onrender.com/listings" open the link and enjoy the website
 
 
