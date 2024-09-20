@@ -31,6 +31,3 @@ const initDB = async () => {
 };
 
 initDB();
-
-// user = Shashi
-// password = Shashi
