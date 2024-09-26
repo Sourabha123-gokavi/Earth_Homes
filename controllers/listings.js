@@ -25,6 +25,9 @@ module.exports.showListing = async (req, res) => {
     res.render("listings/show.ejs", { listing });
 };
 
+
+
+//geo coding is done here
 module.exports.createListings = async (req, res, next) => {
 
     let response = await geocodingClient
